@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Week two</title>
+</head>
+<body>
+    <header>
+        <h1>Enhanced Forms Assignement</h1>
+        <p>Welcome to my Week 2 assignment page.</p>      
+    </header>
+    <br>
+
+<!-- Nested ordered List of cars, models, specs, and Year of manufucture -->
+    <section>
+        <h2>Cars</h2>
+        <ol type="I">
+            <li>Mercedes-Benz
+                <ol>
+                    <li>Model: C250</li>
+                    <li>Specs: 2.0L I4 Turbo, 255 hp</li>
+                    <li>Year: 2021</li>
+                </ol>
+            </li>
+            <li>Toyota
+                <ol>
+                    <li>Model: Camry</li>
+                    <li>Specs: 2.5L I4, 203 hp</li>
+                    <li>Year: 2020</li>
+                </ol>
+            </li>
+            <li>Ford
+                <ol>
+                    <li>Model: Mustang</li>
+                    <li>Specs: 5.0L V8, 450 hp</li>
+                    <li>Year: 2019</li>
+                </ol>
+            </li>
+            <li>Honda
+                <ol>
+                    <li>Model: Accord</li>
+                    <li>Specs: 1.5L I4 Turbo, 192 hp</li>
+                    <li>Year: 2022</li>
+                </ol>
+        </ol>
+    </section>
+
+    
+<!-- Table -->
+    <section>
+        <h2>Product List</h2>
+        <table cellpadding="10" cellspacing="0">
+            <tr>
+                <th>Product Name</th>
+                <th>Price</th>
+                <th>Description</th>
+            </tr>
+            <tr>
+                <td>Apple</td>
+                <td>kes 30</td>
+                <td>Fresh and juicy apples.</td>
+            </tr>
+            <tr>
+                <td>Banana</td>
+                <td>kes 10</td>
+                <td>Sweet bananas, perfect for snacking.</td>
+            </tr>
+            <tr>
+                <td>Orange</td>
+                <td>kes 10</td>
+                <td>Citrusy oranges, rich in vitamin C.</td>
+            </tr>
+        </table>
+    </section>
+<br><br>
+
+
+
+<!-- Forms -->
+    <section>
+        <h2>Form Submission</h2>
+        <form action="submit_form.php" method="post">
+            <label for="name">Name:</label><br>
+            <input type="text" id="name" name="name" placeholder="Your name" ><br><br>
+
+<!-- Radio for gender -->
+            <label for="radio">Gender <br>
+                <label for="radio"> M 
+                <input type="radio" name="radio" value=" radio" required>
+                </label>
+                <label for="radio"> F
+                <input type="radio" name="radio" value=" radio" required>
+                </label>
+            </label>
+<br> <br>
+<!-- drop down for country -->
+            <label for="Country">Country  </label>
+            <select id="country" name="country" required>
+                <option value="" disabled selected>Select your country</option>
+                <option value="kenya">Kenya</option>
+                <option value="tanzania">Tanzania</option>
+                <option value="uganda">Uganda</option>
+                <option value="rwanda">Rwanda</option>
+                <option value="burundi">Burundi</option>
+            </select>
+
+            
+           
+            <br><br>
+            <label for="email">Email:</label><br>
+            <input type="email" id="email" placeholder="Enter your Email" required type="email"><br><br>
+            
+            <label for="message">Message:</label><br>
+            <textarea id="message" name="message" rows="4" cols="50"></textarea><br><br>
+            
+            <input type="submit" value="Submit">
+        </form>
+    </section>
+    
+</body>
+</html>
